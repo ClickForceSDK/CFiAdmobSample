@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2221A0361F205D430027258F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A0351F205D430027258F /* main.m */; };
+		2221A0391F205D430027258F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A0381F205D430027258F /* AppDelegate.m */; };
+		2221A03C1F205D430027258F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A03B1F205D430027258F /* ViewController.m */; };
+		2221A03F1F205D430027258F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2221A03D1F205D430027258F /* Main.storyboard */; };
+		2221A0421F205D430027258F /* CFiAdmobSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2221A0401F205D430027258F /* CFiAdmobSample.xcdatamodeld */; };
+		2221A0441F205D430027258F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2221A0431F205D430027258F /* Assets.xcassets */; };
+		2221A0471F205D430027258F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2221A0451F205D430027258F /* LaunchScreen.storyboard */; };
+		2221A0521F205D440027258F /* CFiAdmobSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A0511F205D440027258F /* CFiAdmobSampleTests.m */; };
+		2221A05D1F205D440027258F /* CFiAdmobSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A05C1F205D440027258F /* CFiAdmobSampleUITests.m */; };
+		2221A0B31F2080CD0027258F /* libiMFAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0B21F2080CD0027258F /* libiMFAd.a */; };
+		2221A0B81F2080DF0027258F /* DMAdmobCustomAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A0B71F2080DF0027258F /* DMAdmobCustomAD.m */; };
+		2221A0BF1F2082A00027258F /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0BE1F2082A00027258F /* GoogleMobileAds.framework */; };
+		2221A0C21F2083820027258F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0C11F2083820027258F /* AddressBook.framework */; };
+		2221A0C41F2083890027258F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0C31F2083890027258F /* CoreFoundation.framework */; };
+		2221A0C61F2083900027258F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0C51F2083900027258F /* CoreGraphics.framework */; };
+		2221A0C81F20839E0027258F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0C71F20839E0027258F /* EventKit.framework */; };
+		2221A0CA1F2083A70027258F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0C91F2083A70027258F /* Foundation.framework */; };
+		2221A0CC1F20844B0027258F /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0CB1F20844B0027258F /* MediaPlayer.framework */; };
+		2221A0CE1F2084530027258F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0CD1F2084530027258F /* MessageUI.framework */; };
+		2221A0D01F20845B0027258F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0CF1F20845B0027258F /* MobileCoreServices.framework */; };
+		2221A0D21F2084620027258F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0D11F2084620027258F /* QuartzCore.framework */; };
+		2221A0D41F2084690027258F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0D31F2084690027258F /* SystemConfiguration.framework */; };
+		2221A0D61F2084700027258F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0D51F2084700027258F /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2221A04E1F205D440027258F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2221A0291F205D430027258F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2221A0301F205D430027258F;
+			remoteInfo = CFiAdmobSample;
+		};
+		2221A0591F205D440027258F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2221A0291F205D430027258F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2221A0301F205D430027258F;
+			remoteInfo = CFiAdmobSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2221A0311F205D430027258F /* CFiAdmobSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CFiAdmobSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2221A0351F205D430027258F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2221A0371F205D430027258F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2221A0381F205D430027258F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2221A03A1F205D430027258F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2221A03B1F205D430027258F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2221A03E1F205D430027258F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2221A0411F205D430027258F /* CFiAdmobSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CFiAdmobSample.xcdatamodel; sourceTree = "<group>"; };
+		2221A0431F205D430027258F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2221A0461F205D430027258F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2221A0481F205D440027258F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2221A04D1F205D440027258F /* CFiAdmobSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFiAdmobSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2221A0511F205D440027258F /* CFiAdmobSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFiAdmobSampleTests.m; sourceTree = "<group>"; };
+		2221A0531F205D440027258F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2221A0581F205D440027258F /* CFiAdmobSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFiAdmobSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2221A05C1F205D440027258F /* CFiAdmobSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFiAdmobSampleUITests.m; sourceTree = "<group>"; };
+		2221A05E1F205D440027258F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2221A0B21F2080CD0027258F /* libiMFAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiMFAd.a; sourceTree = "<group>"; };
+		2221A0B61F2080DF0027258F /* DMAdmobCustomAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAdmobCustomAD.h; sourceTree = "<group>"; };
+		2221A0B71F2080DF0027258F /* DMAdmobCustomAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAdmobCustomAD.m; sourceTree = "<group>"; };
+		2221A0B91F2080E80027258F /* MFBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBannerView.h; sourceTree = "<group>"; };
+		2221A0BE1F2082A00027258F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		2221A0C11F2083820027258F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		2221A0C31F2083890027258F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		2221A0C51F2083900027258F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2221A0C71F20839E0027258F /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		2221A0C91F2083A70027258F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2221A0CB1F20844B0027258F /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2221A0CD1F2084530027258F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2221A0CF1F20845B0027258F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2221A0D11F2084620027258F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2221A0D31F2084690027258F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2221A0D51F2084700027258F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2221A02E1F205D430027258F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2221A0D61F2084700027258F /* UIKit.framework in Frameworks */,
+				2221A0D41F2084690027258F /* SystemConfiguration.framework in Frameworks */,
+				2221A0D21F2084620027258F /* QuartzCore.framework in Frameworks */,
+				2221A0D01F20845B0027258F /* MobileCoreServices.framework in Frameworks */,
+				2221A0CE1F2084530027258F /* MessageUI.framework in Frameworks */,
+				2221A0CC1F20844B0027258F /* MediaPlayer.framework in Frameworks */,
+				2221A0CA1F2083A70027258F /* Foundation.framework in Frameworks */,
+				2221A0C81F20839E0027258F /* EventKit.framework in Frameworks */,
+				2221A0C61F2083900027258F /* CoreGraphics.framework in Frameworks */,
+				2221A0C41F2083890027258F /* CoreFoundation.framework in Frameworks */,
+				2221A0C21F2083820027258F /* AddressBook.framework in Frameworks */,
+				2221A0BF1F2082A00027258F /* GoogleMobileAds.framework in Frameworks */,
+				2221A0B31F2080CD0027258F /* libiMFAd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2221A04A1F205D440027258F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2221A0551F205D440027258F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2221A0281F205D430027258F = {
+			isa = PBXGroup;
+			children = (
+				2221A0331F205D430027258F /* CFiAdmobSample */,
+				2221A0501F205D440027258F /* CFiAdmobSampleTests */,
+				2221A05B1F205D440027258F /* CFiAdmobSampleUITests */,
+				2221A0321F205D430027258F /* Products */,
+				2221A0C01F2083820027258F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2221A0321F205D430027258F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2221A0311F205D430027258F /* CFiAdmobSample.app */,
+				2221A04D1F205D440027258F /* CFiAdmobSampleTests.xctest */,
+				2221A0581F205D440027258F /* CFiAdmobSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2221A0331F205D430027258F /* CFiAdmobSample */ = {
+			isa = PBXGroup;
+			children = (
+				2221A0B21F2080CD0027258F /* libiMFAd.a */,
+				2221A0BE1F2082A00027258F /* GoogleMobileAds.framework */,
+				2221A0B91F2080E80027258F /* MFBannerView.h */,
+				2221A0B61F2080DF0027258F /* DMAdmobCustomAD.h */,
+				2221A0B71F2080DF0027258F /* DMAdmobCustomAD.m */,
+				2221A0371F205D430027258F /* AppDelegate.h */,
+				2221A0381F205D430027258F /* AppDelegate.m */,
+				2221A03A1F205D430027258F /* ViewController.h */,
+				2221A03B1F205D430027258F /* ViewController.m */,
+				2221A03D1F205D430027258F /* Main.storyboard */,
+				2221A0431F205D430027258F /* Assets.xcassets */,
+				2221A0451F205D430027258F /* LaunchScreen.storyboard */,
+				2221A0481F205D440027258F /* Info.plist */,
+				2221A0401F205D430027258F /* CFiAdmobSample.xcdatamodeld */,
+				2221A0341F205D430027258F /* Supporting Files */,
+			);
+			path = CFiAdmobSample;
+			sourceTree = "<group>";
+		};
+		2221A0341F205D430027258F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2221A0351F205D430027258F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2221A0501F205D440027258F /* CFiAdmobSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				2221A0511F205D440027258F /* CFiAdmobSampleTests.m */,
+				2221A0531F205D440027258F /* Info.plist */,
+			);
+			path = CFiAdmobSampleTests;
+			sourceTree = "<group>";
+		};
+		2221A05B1F205D440027258F /* CFiAdmobSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2221A05C1F205D440027258F /* CFiAdmobSampleUITests.m */,
+				2221A05E1F205D440027258F /* Info.plist */,
+			);
+			path = CFiAdmobSampleUITests;
+			sourceTree = "<group>";
+		};
+		2221A0C01F2083820027258F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2221A0D51F2084700027258F /* UIKit.framework */,
+				2221A0D31F2084690027258F /* SystemConfiguration.framework */,
+				2221A0D11F2084620027258F /* QuartzCore.framework */,
+				2221A0CF1F20845B0027258F /* MobileCoreServices.framework */,
+				2221A0CD1F2084530027258F /* MessageUI.framework */,
+				2221A0CB1F20844B0027258F /* MediaPlayer.framework */,
+				2221A0C91F2083A70027258F /* Foundation.framework */,
+				2221A0C71F20839E0027258F /* EventKit.framework */,
+				2221A0C51F2083900027258F /* CoreGraphics.framework */,
+				2221A0C31F2083890027258F /* CoreFoundation.framework */,
+				2221A0C11F2083820027258F /* AddressBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2221A0301F205D430027258F /* CFiAdmobSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2221A0611F205D440027258F /* Build configuration list for PBXNativeTarget "CFiAdmobSample" */;
+			buildPhases = (
+				2221A02D1F205D430027258F /* Sources */,
+				2221A02E1F205D430027258F /* Frameworks */,
+				2221A02F1F205D430027258F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CFiAdmobSample;
+			productName = CFiAdmobSample;
+			productReference = 2221A0311F205D430027258F /* CFiAdmobSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2221A04C1F205D440027258F /* CFiAdmobSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2221A0641F205D440027258F /* Build configuration list for PBXNativeTarget "CFiAdmobSampleTests" */;
+			buildPhases = (
+				2221A0491F205D440027258F /* Sources */,
+				2221A04A1F205D440027258F /* Frameworks */,
+				2221A04B1F205D440027258F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2221A04F1F205D440027258F /* PBXTargetDependency */,
+			);
+			name = CFiAdmobSampleTests;
+			productName = CFiAdmobSampleTests;
+			productReference = 2221A04D1F205D440027258F /* CFiAdmobSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2221A0571F205D440027258F /* CFiAdmobSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2221A0671F205D440027258F /* Build configuration list for PBXNativeTarget "CFiAdmobSampleUITests" */;
+			buildPhases = (
+				2221A0541F205D440027258F /* Sources */,
+				2221A0551F205D440027258F /* Frameworks */,
+				2221A0561F205D440027258F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2221A05A1F205D440027258F /* PBXTargetDependency */,
+			);
+			name = CFiAdmobSampleUITests;
+			productName = CFiAdmobSampleUITests;
+			productReference = 2221A0581F205D440027258F /* CFiAdmobSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2221A0291F205D430027258F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = clickforce;
+				TargetAttributes = {
+					2221A0301F205D430027258F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8Q3LY5VL5Q;
+						ProvisioningStyle = Automatic;
+					};
+					2221A04C1F205D440027258F = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2221A0301F205D430027258F;
+					};
+					2221A0571F205D440027258F = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2221A0301F205D430027258F;
+					};
+				};
+			};
+			buildConfigurationList = 2221A02C1F205D430027258F /* Build configuration list for PBXProject "CFiAdmobSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2221A0281F205D430027258F;
+			productRefGroup = 2221A0321F205D430027258F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2221A0301F205D430027258F /* CFiAdmobSample */,
+				2221A04C1F205D440027258F /* CFiAdmobSampleTests */,
+				2221A0571F205D440027258F /* CFiAdmobSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2221A02F1F205D430027258F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2221A0471F205D430027258F /* LaunchScreen.storyboard in Resources */,
+				2221A0441F205D430027258F /* Assets.xcassets in Resources */,
+				2221A03F1F205D430027258F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2221A04B1F205D440027258F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2221A0561F205D440027258F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2221A02D1F205D430027258F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2221A03C1F205D430027258F /* ViewController.m in Sources */,
+				2221A0391F205D430027258F /* AppDelegate.m in Sources */,
+				2221A0B81F2080DF0027258F /* DMAdmobCustomAD.m in Sources */,
+				2221A0421F205D430027258F /* CFiAdmobSample.xcdatamodeld in Sources */,
+				2221A0361F205D430027258F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2221A0491F205D440027258F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2221A0521F205D440027258F /* CFiAdmobSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2221A0541F205D440027258F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2221A05D1F205D440027258F /* CFiAdmobSampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2221A04F1F205D440027258F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2221A0301F205D430027258F /* CFiAdmobSample */;
+			targetProxy = 2221A04E1F205D440027258F /* PBXContainerItemProxy */;
+		};
+		2221A05A1F205D440027258F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2221A0301F205D430027258F /* CFiAdmobSample */;
+			targetProxy = 2221A0591F205D440027258F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2221A03D1F205D430027258F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2221A03E1F205D430027258F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2221A0451F205D430027258F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2221A0461F205D430027258F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2221A05F1F205D440027258F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2221A0601F205D440027258F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2221A0621F205D440027258F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Q3LY5VL5Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CFiAdmobSample",
+				);
+				INFOPLIST_FILE = CFiAdmobSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CFiAdmobSample",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiAdmobSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2221A0631F205D440027258F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Q3LY5VL5Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CFiAdmobSample",
+				);
+				INFOPLIST_FILE = CFiAdmobSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CFiAdmobSample",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiAdmobSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2221A0651F205D440027258F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CFiAdmobSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiAdmobSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CFiAdmobSample.app/CFiAdmobSample";
+			};
+			name = Debug;
+		};
+		2221A0661F205D440027258F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CFiAdmobSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiAdmobSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CFiAdmobSample.app/CFiAdmobSample";
+			};
+			name = Release;
+		};
+		2221A0681F205D440027258F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CFiAdmobSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiAdmobSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CFiAdmobSample;
+			};
+			name = Debug;
+		};
+		2221A0691F205D440027258F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CFiAdmobSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiAdmobSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CFiAdmobSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2221A02C1F205D430027258F /* Build configuration list for PBXProject "CFiAdmobSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2221A05F1F205D440027258F /* Debug */,
+				2221A0601F205D440027258F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2221A0611F205D440027258F /* Build configuration list for PBXNativeTarget "CFiAdmobSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2221A0621F205D440027258F /* Debug */,
+				2221A0631F205D440027258F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2221A0641F205D440027258F /* Build configuration list for PBXNativeTarget "CFiAdmobSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2221A0651F205D440027258F /* Debug */,
+				2221A0661F205D440027258F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2221A0671F205D440027258F /* Build configuration list for PBXNativeTarget "CFiAdmobSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2221A0681F205D440027258F /* Debug */,
+				2221A0691F205D440027258F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2221A0401F205D430027258F /* CFiAdmobSample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2221A0411F205D430027258F /* CFiAdmobSample.xcdatamodel */,
+			);
+			currentVersion = 2221A0411F205D430027258F /* CFiAdmobSample.xcdatamodel */;
+			path = CFiAdmobSample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2221A0291F205D430027258F /* Project object */;
+}
