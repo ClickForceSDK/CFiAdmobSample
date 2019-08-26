@@ -16,8 +16,7 @@
 		2221A0471F205D430027258F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2221A0451F205D430027258F /* LaunchScreen.storyboard */; };
 		2221A0521F205D440027258F /* CFiAdmobSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A0511F205D440027258F /* CFiAdmobSampleTests.m */; };
 		2221A05D1F205D440027258F /* CFiAdmobSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A05C1F205D440027258F /* CFiAdmobSampleUITests.m */; };
-		2221A0B31F2080CD0027258F /* libiMFAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0B21F2080CD0027258F /* libiMFAd.a */; };
-		2221A0B81F2080DF0027258F /* DMAdmobCustomAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A0B71F2080DF0027258F /* DMAdmobCustomAD.m */; };
+		2221A0B81F2080DF0027258F /* AdMobBannerCustomAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A0B71F2080DF0027258F /* AdMobBannerCustomAD.m */; };
 		2221A0BF1F2082A00027258F /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0BE1F2082A00027258F /* GoogleMobileAds.framework */; };
 		2221A0C21F2083820027258F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0C11F2083820027258F /* AddressBook.framework */; };
 		2221A0C41F2083890027258F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0C31F2083890027258F /* CoreFoundation.framework */; };
@@ -30,6 +29,7 @@
 		2221A0D21F2084620027258F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0D11F2084620027258F /* QuartzCore.framework */; };
 		2221A0D41F2084690027258F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0D31F2084690027258F /* SystemConfiguration.framework */; };
 		2221A0D61F2084700027258F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0D51F2084700027258F /* UIKit.framework */; };
+		48AA3DB32181C70E00463D30 /* iMFAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48AA3DB22181C70D00463D30 /* iMFAD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +67,8 @@
 		2221A0581F205D440027258F /* CFiAdmobSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CFiAdmobSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2221A05C1F205D440027258F /* CFiAdmobSampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFiAdmobSampleUITests.m; sourceTree = "<group>"; };
 		2221A05E1F205D440027258F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2221A0B21F2080CD0027258F /* libiMFAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiMFAd.a; sourceTree = "<group>"; };
-		2221A0B61F2080DF0027258F /* DMAdmobCustomAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAdmobCustomAD.h; sourceTree = "<group>"; };
-		2221A0B71F2080DF0027258F /* DMAdmobCustomAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAdmobCustomAD.m; sourceTree = "<group>"; };
-		2221A0B91F2080E80027258F /* MFBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFBannerView.h; sourceTree = "<group>"; };
+		2221A0B61F2080DF0027258F /* AdMobBannerCustomAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobBannerCustomAD.h; sourceTree = "<group>"; };
+		2221A0B71F2080DF0027258F /* AdMobBannerCustomAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMobBannerCustomAD.m; sourceTree = "<group>"; };
 		2221A0BE1F2082A00027258F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		2221A0C11F2083820027258F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		2221A0C31F2083890027258F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -83,6 +81,7 @@
 		2221A0D11F2084620027258F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2221A0D31F2084690027258F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2221A0D51F2084700027258F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		48AA3DB22181C70D00463D30 /* iMFAD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iMFAD.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +93,7 @@
 				2221A0D41F2084690027258F /* SystemConfiguration.framework in Frameworks */,
 				2221A0D21F2084620027258F /* QuartzCore.framework in Frameworks */,
 				2221A0D01F20845B0027258F /* MobileCoreServices.framework in Frameworks */,
+				48AA3DB32181C70E00463D30 /* iMFAD.framework in Frameworks */,
 				2221A0CE1F2084530027258F /* MessageUI.framework in Frameworks */,
 				2221A0CC1F20844B0027258F /* MediaPlayer.framework in Frameworks */,
 				2221A0CA1F2083A70027258F /* Foundation.framework in Frameworks */,
@@ -102,7 +102,6 @@
 				2221A0C41F2083890027258F /* CoreFoundation.framework in Frameworks */,
 				2221A0C21F2083820027258F /* AddressBook.framework in Frameworks */,
 				2221A0BF1F2082A00027258F /* GoogleMobileAds.framework in Frameworks */,
-				2221A0B31F2080CD0027258F /* libiMFAd.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,11 +146,10 @@
 		2221A0331F205D430027258F /* CFiAdmobSample */ = {
 			isa = PBXGroup;
 			children = (
-				2221A0B21F2080CD0027258F /* libiMFAd.a */,
+				48AA3DB22181C70D00463D30 /* iMFAD.framework */,
 				2221A0BE1F2082A00027258F /* GoogleMobileAds.framework */,
-				2221A0B91F2080E80027258F /* MFBannerView.h */,
-				2221A0B61F2080DF0027258F /* DMAdmobCustomAD.h */,
-				2221A0B71F2080DF0027258F /* DMAdmobCustomAD.m */,
+				2221A0B61F2080DF0027258F /* AdMobBannerCustomAD.h */,
+				2221A0B71F2080DF0027258F /* AdMobBannerCustomAD.m */,
 				2221A0371F205D430027258F /* AppDelegate.h */,
 				2221A0381F205D430027258F /* AppDelegate.m */,
 				2221A03A1F205D430027258F /* ViewController.h */,
@@ -346,7 +344,7 @@
 			files = (
 				2221A03C1F205D430027258F /* ViewController.m in Sources */,
 				2221A0391F205D430027258F /* AppDelegate.m in Sources */,
-				2221A0B81F2080DF0027258F /* DMAdmobCustomAD.m in Sources */,
+				2221A0B81F2080DF0027258F /* AdMobBannerCustomAD.m in Sources */,
 				2221A0421F205D430027258F /* CFiAdmobSample.xcdatamodeld in Sources */,
 				2221A0361F205D430027258F /* main.m in Sources */,
 			);

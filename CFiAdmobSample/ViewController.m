@@ -47,7 +47,7 @@
     // well as any devices you want to receive test ads.
     
     
-    request.testDevices = [NSArray arrayWithObjects:@"",
+    request.testDevices = [NSArray arrayWithObjects:@"1ecb9a7ec3266aac8f4fc707fdd9e322",
      // TODO: Add your device/simulator test identifiers here. They are
      // printed to the console when the app is launched.
      kGADSimulatorID,
