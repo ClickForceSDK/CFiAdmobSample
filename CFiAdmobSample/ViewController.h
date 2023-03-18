@@ -11,7 +11,7 @@
 @import GoogleMobileAds;
 
 
-@interface ViewController : UIViewController<GADBannerViewDelegate,GADInterstitialDelegate>
+@interface ViewController : UIViewController<GADBannerViewDelegate>
 
 
 @end

@@ -50,6 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark 開始取得廣告
 - (void)requestAd;
+- (void)requestAdWithNoPrompt;
 
 #pragma mark 設定是否輸出除錯訊息
 - (void)debugInfo:(BOOL)state;

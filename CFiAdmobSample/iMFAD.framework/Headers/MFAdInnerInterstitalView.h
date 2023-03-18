@@ -40,6 +40,7 @@
 
 #pragma mark 開始取得全版廣告
 - (void)requestInnerFullScreenAD;
+- (void)requestInnerFullScreenADWithNoPrompt;
 
 #pragma mark 設定外部的ScrollView
 -(void)setOutSiteScrollview:(UIScrollView *)oscrollview;

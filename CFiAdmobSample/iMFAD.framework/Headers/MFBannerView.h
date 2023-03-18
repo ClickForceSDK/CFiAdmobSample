@@ -16,13 +16,14 @@ typedef struct  MFAdSize {
 
 extern MFAdSize const MFAdSizeFullScreen;           // 全版畫面廣告
 extern MFAdSize const MFAdSize320X50;               // use for 320 * 50
-extern MFAdSize const MFAdSize468X60;           // use for 468 * 60 for iPad
+//extern MFAdSize const MFAdSize468X60;           // use for 468 * 60 for iPad
 extern MFAdSize const MFAdSize728X90;          // use for 728 * 90 for iPad
 extern MFAdSize const MFAdSize300X250;      // use for 300 * 250
 extern MFAdSize const MFAdSize300X100;      // use for 300 * 100
-extern MFAdSize const MFAdSize200X40;      // use for 300 * 100
+//extern MFAdSize const MFAdSize200X40;      // use for 300 * 100
 extern MFAdSize const MFAdSize320X100;
 extern MFAdSize const MFAdSize336X280;     // use for 336 * 280
+extern MFAdSize const MFSmartSize;         //auto ad size
 
 
 
@@ -75,8 +76,16 @@ CGSize MFCGSizeFromGADAdSize(MFAdSize size);
 #pragma mark 開始取得廣告
 - (void)requestAd;
 
+- (void)requestAdWithNoPrompt;
+
 #pragma mark 顯示取得廣告
 - (void)show;
+
+#pragma mark 顯示廣告寬度
+- (CGFloat)adWidth;
+
+#pragma mark 顯示廣告高度
+- (CGFloat)adHeight;
 
 #pragma mark 設定廣告是否自動更新
 - (void)setAdAutoRefresh:(BOOL)state;
@@ -94,5 +103,6 @@ CGSize MFCGSizeFromGADAdSize(MFAdSize size);
 #pragma mark - 關閉目前呈現的廣告，但不會將Banner從Superview中移除
 - (void)close;
 
-
+//temp
+- (NSString *)getMFIdfa;
 @end

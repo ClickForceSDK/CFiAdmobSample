@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,6 @@
 		2221A0521F205D440027258F /* CFiAdmobSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A0511F205D440027258F /* CFiAdmobSampleTests.m */; };
 		2221A05D1F205D440027258F /* CFiAdmobSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A05C1F205D440027258F /* CFiAdmobSampleUITests.m */; };
 		2221A0B81F2080DF0027258F /* AdMobBannerCustomAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2221A0B71F2080DF0027258F /* AdMobBannerCustomAD.m */; };
-		2221A0BF1F2082A00027258F /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0BE1F2082A00027258F /* GoogleMobileAds.framework */; };
 		2221A0C21F2083820027258F /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0C11F2083820027258F /* AddressBook.framework */; };
 		2221A0C41F2083890027258F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0C31F2083890027258F /* CoreFoundation.framework */; };
 		2221A0C61F2083900027258F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0C51F2083900027258F /* CoreGraphics.framework */; };
@@ -30,6 +29,14 @@
 		2221A0D41F2084690027258F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0D31F2084690027258F /* SystemConfiguration.framework */; };
 		2221A0D61F2084700027258F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221A0D51F2084700027258F /* UIKit.framework */; };
 		48AA3DB32181C70E00463D30 /* iMFAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48AA3DB22181C70D00463D30 /* iMFAD.framework */; };
+		48B207ED29BF7C7A00959211 /* GoogleMobileAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B207EC29BF7C7A00959211 /* GoogleMobileAds.xcframework */; };
+		48B207F429BF7CFC00959211 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B207EE29BF7CFC00959211 /* nanopb.xcframework */; };
+		48B207F529BF7CFC00959211 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B207EF29BF7CFC00959211 /* PromisesObjC.xcframework */; };
+		48B207F629BF7CFC00959211 /* UserMessagingPlatform.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B207F029BF7CFC00959211 /* UserMessagingPlatform.xcframework */; };
+		48B207F729BF7CFC00959211 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B207F129BF7CFC00959211 /* GoogleUtilities.xcframework */; };
+		48B207F829BF7CFC00959211 /* GoogleAppMeasurement.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B207F229BF7CFC00959211 /* GoogleAppMeasurement.xcframework */; };
+		48B207F929BF7CFC00959211 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B207F329BF7CFC00959211 /* GoogleAppMeasurementIdentitySupport.xcframework */; };
+		48CC984A29C4D3C700FED3A9 /* AdMobCustomAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CC984829C4D3C700FED3A9 /* AdMobCustomAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +76,6 @@
 		2221A05E1F205D440027258F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2221A0B61F2080DF0027258F /* AdMobBannerCustomAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobBannerCustomAD.h; sourceTree = "<group>"; };
 		2221A0B71F2080DF0027258F /* AdMobBannerCustomAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMobBannerCustomAD.m; sourceTree = "<group>"; };
-		2221A0BE1F2082A00027258F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		2221A0C11F2083820027258F /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		2221A0C31F2083890027258F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2221A0C51F2083900027258F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +88,16 @@
 		2221A0D31F2084690027258F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2221A0D51F2084700027258F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		48AA3DB22181C70D00463D30 /* iMFAD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iMFAD.framework; sourceTree = "<group>"; };
+		48B207EC29BF7C7A00959211 /* GoogleMobileAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAds.xcframework; path = CFiAdmobSample/GoogleMobileAds.xcframework; sourceTree = "<group>"; };
+		48B207EE29BF7CFC00959211 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = CFiAdmobSample/nanopb.xcframework; sourceTree = "<group>"; };
+		48B207EF29BF7CFC00959211 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = CFiAdmobSample/PromisesObjC.xcframework; sourceTree = "<group>"; };
+		48B207F029BF7CFC00959211 /* UserMessagingPlatform.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = UserMessagingPlatform.xcframework; path = CFiAdmobSample/UserMessagingPlatform.xcframework; sourceTree = "<group>"; };
+		48B207F129BF7CFC00959211 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = CFiAdmobSample/GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		48B207F229BF7CFC00959211 /* GoogleAppMeasurement.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurement.xcframework; path = CFiAdmobSample/GoogleAppMeasurement.xcframework; sourceTree = "<group>"; };
+		48B207F329BF7CFC00959211 /* GoogleAppMeasurementIdentitySupport.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleAppMeasurementIdentitySupport.xcframework; path = CFiAdmobSample/GoogleAppMeasurementIdentitySupport.xcframework; sourceTree = "<group>"; };
+		48B207FD29C0C31900959211 /* GoogleMobileAdsMediationTestSuite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleMobileAdsMediationTestSuite.xcframework; path = CFiAdmobSample/GoogleMobileAdsMediationTestSuite.xcframework; sourceTree = "<group>"; };
+		48CC984829C4D3C700FED3A9 /* AdMobCustomAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMobCustomAdapter.m; sourceTree = "<group>"; };
+		48CC984929C4D3C700FED3A9 /* AdMobCustomAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobCustomAdapter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +105,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B207F429BF7CFC00959211 /* nanopb.xcframework in Frameworks */,
+				48B207F529BF7CFC00959211 /* PromisesObjC.xcframework in Frameworks */,
+				48B207F629BF7CFC00959211 /* UserMessagingPlatform.xcframework in Frameworks */,
+				48B207F729BF7CFC00959211 /* GoogleUtilities.xcframework in Frameworks */,
+				48B207F829BF7CFC00959211 /* GoogleAppMeasurement.xcframework in Frameworks */,
+				48B207F929BF7CFC00959211 /* GoogleAppMeasurementIdentitySupport.xcframework in Frameworks */,
+				48B207ED29BF7C7A00959211 /* GoogleMobileAds.xcframework in Frameworks */,
 				2221A0D61F2084700027258F /* UIKit.framework in Frameworks */,
 				2221A0D41F2084690027258F /* SystemConfiguration.framework in Frameworks */,
 				2221A0D21F2084620027258F /* QuartzCore.framework in Frameworks */,
@@ -101,7 +124,6 @@
 				2221A0C61F2083900027258F /* CoreGraphics.framework in Frameworks */,
 				2221A0C41F2083890027258F /* CoreFoundation.framework in Frameworks */,
 				2221A0C21F2083820027258F /* AddressBook.framework in Frameworks */,
-				2221A0BF1F2082A00027258F /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				48AA3DB22181C70D00463D30 /* iMFAD.framework */,
-				2221A0BE1F2082A00027258F /* GoogleMobileAds.framework */,
+				48CC984929C4D3C700FED3A9 /* AdMobCustomAdapter.h */,
+				48CC984829C4D3C700FED3A9 /* AdMobCustomAdapter.m */,
 				2221A0B61F2080DF0027258F /* AdMobBannerCustomAD.h */,
 				2221A0B71F2080DF0027258F /* AdMobBannerCustomAD.m */,
 				2221A0371F205D430027258F /* AppDelegate.h */,
@@ -193,6 +216,14 @@
 		2221A0C01F2083820027258F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				48B207FD29C0C31900959211 /* GoogleMobileAdsMediationTestSuite.xcframework */,
+				48B207F229BF7CFC00959211 /* GoogleAppMeasurement.xcframework */,
+				48B207F329BF7CFC00959211 /* GoogleAppMeasurementIdentitySupport.xcframework */,
+				48B207F129BF7CFC00959211 /* GoogleUtilities.xcframework */,
+				48B207EE29BF7CFC00959211 /* nanopb.xcframework */,
+				48B207EF29BF7CFC00959211 /* PromisesObjC.xcframework */,
+				48B207F029BF7CFC00959211 /* UserMessagingPlatform.xcframework */,
+				48B207EC29BF7C7A00959211 /* GoogleMobileAds.xcframework */,
 				2221A0D51F2084700027258F /* UIKit.framework */,
 				2221A0D31F2084690027258F /* SystemConfiguration.framework */,
 				2221A0D11F2084620027258F /* QuartzCore.framework */,
@@ -232,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2221A0641F205D440027258F /* Build configuration list for PBXNativeTarget "CFiAdmobSampleTests" */;
 			buildPhases = (
+				4206F9451A31D683EE749523 /* [CP] Check Pods Manifest.lock */,
 				2221A0491F205D440027258F /* Sources */,
 				2221A04A1F205D440027258F /* Frameworks */,
 				2221A04B1F205D440027258F /* Resources */,
@@ -250,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2221A0671F205D440027258F /* Build configuration list for PBXNativeTarget "CFiAdmobSampleUITests" */;
 			buildPhases = (
+				432209837BE331086131FCD0 /* [CP] Check Pods Manifest.lock */,
 				2221A0541F205D440027258F /* Sources */,
 				2221A0551F205D440027258F /* Frameworks */,
 				2221A0561F205D440027258F /* Resources */,
+				211783298F6DEFA04315659B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,6 +329,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -337,6 +372,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		211783298F6DEFA04315659B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CFiAdmobSample-CFiAdmobSampleUITests/Pods-CFiAdmobSample-CFiAdmobSampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CFiAdmobSample-CFiAdmobSampleUITests/Pods-CFiAdmobSample-CFiAdmobSampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CFiAdmobSample-CFiAdmobSampleUITests/Pods-CFiAdmobSample-CFiAdmobSampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4206F9451A31D683EE749523 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CFiAdmobSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		432209837BE331086131FCD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CFiAdmobSample-CFiAdmobSampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2221A02D1F205D430027258F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -346,6 +445,7 @@
 				2221A0391F205D430027258F /* AppDelegate.m in Sources */,
 				2221A0B81F2080DF0027258F /* AdMobBannerCustomAD.m in Sources */,
 				2221A0421F205D430027258F /* CFiAdmobSample.xcdatamodeld in Sources */,
+				48CC984A29C4D3C700FED3A9 /* AdMobCustomAdapter.m in Sources */,
 				2221A0361F205D430027258F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,12 +598,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8Q3LY5VL5Q;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CFiAdmobSample",
 				);
 				INFOPLIST_FILE = CFiAdmobSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CFiAdmobSample",
@@ -522,16 +626,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8Q3LY5VL5Q;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CFiAdmobSample",
 				);
 				INFOPLIST_FILE = CFiAdmobSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CFiAdmobSample",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -546,7 +655,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CFiAdmobSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiAdmobSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CFiAdmobSample.app/CFiAdmobSample";
@@ -558,7 +671,11 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CFiAdmobSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiAdmobSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CFiAdmobSample.app/CFiAdmobSample";
@@ -569,7 +686,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = CFiAdmobSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiAdmobSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CFiAdmobSample;
@@ -580,7 +701,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = CFiAdmobSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiAdmobSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = CFiAdmobSample;

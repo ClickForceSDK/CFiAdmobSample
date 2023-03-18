@@ -1,79 +1,91 @@
 //
-//  DMAdmobCustomAd.m
-//  DMMediactionDemo
+//  AdMobBannerCustomAD
+//  CFiAdmobSample
 //
-//  Created by Wei Ting Chen on 13/10/14.
-//  Copyright (c) 2013年 Wei Ting Chen. All rights reserved.
+//  Created by CF-NB on 2023/3/14.
+//  Copyright © 2023 clickforce. All rights reserved.
 //
 
 #import "AdMobBannerCustomAD.h"
+#include <stdatomic.h>
 #import <iMFAD/MFBannerView.h>
+#import <Foundation/Foundation.h>
 
+@interface AdMobBannerCustomAD() <MFBannerDelegate, GADMediationBannerAd> {
+    MFBannerView *banner;
+
+    GADMediationBannerLoadCompletionHandler _loadCompletionHandler;
+
+    id<GADMediationBannerAdEventDelegate> _adEventDelegate;
+}
+
+@end
 
 @implementation AdMobBannerCustomAD
-
-@synthesize delegate;
 
 /// Constant for Sample Ad Network custom event error domain.
 static NSString *const customEventErrorDomain = @"com.google.CustomEvent";
 
+- (void)loadBannerForAdConfiguration:(GADMediationBannerAdConfiguration *)adConfig completionHandler:(GADMediationBannerLoadCompletionHandler)adHandler {
 
+    __block atomic_flag completionHandlerCalled = ATOMIC_FLAG_INIT;
+    __block GADMediationBannerLoadCompletionHandler originalCompletionHandler =
+      [adHandler copy];
 
+    _loadCompletionHandler = ^id<GADMediationBannerAdEventDelegate>(
+    _Nullable id<GADMediationBannerAd> ad, NSError *_Nullable error) {
+        
+    if (atomic_flag_test_and_set(&completionHandlerCalled)) {
+      return nil;
+    }
 
-- (void)requestBannerAd:(GADAdSize)adSize
-              parameter:(NSString *)serverParameter
-                  label:(NSString *)serverLabel
-                request:(GADCustomEventRequest *)request
-{
-    
-    banner = [[MFBannerView alloc] initWithAdSize:MFAdSize320X50 origin:CGPointMake(0,0)];
-    
+    id<GADMediationBannerAdEventDelegate> delegate = nil;
+    if (originalCompletionHandler) {
+      delegate = originalCompletionHandler(ad, error);
+    }
+
+    originalCompletionHandler = nil;
+
+    return delegate;
+  };
+
+    NSString *zoneId = adConfig.credentials.settings[@"parameter"];
+    NSLog(@"Clickforce zoneId: %@", zoneId);
+
+    banner = [[MFBannerView alloc] initWithAdSize:MFAdSize320X50 origin:CGPointMake(0, 0)];
     [banner setBannerAlignment:Alignment_Center];
-    
-    [banner setBannerBackgroudColor:[UIColor blackColor]];
-    
-    
-    banner.bannerId = serverParameter ;
-    
+    [banner setBackgroundColor:[UIColor blackColor]];
+    banner.bannerId = zoneId;
     banner.delegate = self;
-    
     [banner requestAd];
-    
-    [self.delegate customEventBanner:self didReceiveAd:banner];
-    
+
 }
 
--(void)requestAdSuccess{
+
+
+#pragma mark ClickForce implementation
+- (void)requestAdSuccess {
     [banner show];
-    [self bannerDidLoad:banner];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        _adEventDelegate = _loadCompletionHandler(self, nil);
+    });
+    [_adEventDelegate reportImpression];
 }
 
--(void)requestAdFail{
-    [self banner:banner didFailToLoadAdWithErrorCode:0];
+- (void)requestAdFail {
+    NSError *error = [NSError errorWithDomain:customEventErrorDomain code:GADErrorNoFill userInfo:nil];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        _adEventDelegate = _loadCompletionHandler(nil, error);
+    });
 }
 
--(void)onClickAd{
-    [self bannerWillLeaveApplication:banner];
+- (void)onClickAd {
+    [_adEventDelegate reportClick];
 }
 
-#pragma mark SampleBannerAdDelegate implementation
-
-- (void)bannerDidLoad:(MFBannerView *)banner {
-//    [self.delegate customEventBanner:self didReceiveAd:banner];
-    NSLog(@"Success Ad");
+#pragma mark GADMediationBannerAd implementation
+- (nonnull UIView *)view {
+    return banner;
 }
-
-- (void)banner:(MFBannerView *)banner didFailToLoadAdWithErrorCode:(int)errorCode {
-    NSError *error = [NSError errorWithDomain:customEventErrorDomain code:errorCode userInfo:nil];
-    [self.delegate customEventBanner:self didFailAd:error];
-    NSLog(@"No Show Ad");
-}
-
-- (void)bannerWillLeaveApplication:(MFBannerView *)banner {
-    [self.delegate customEventBannerWasClicked:self];
-    [self.delegate customEventBannerWillLeaveApplication:self];
-    NSLog(@"Click");
-}
-
 
 @end

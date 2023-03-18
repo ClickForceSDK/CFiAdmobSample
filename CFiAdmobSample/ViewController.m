@@ -21,7 +21,7 @@
     //Mediation
     GADBannerView  *bannerView = [[GADBannerView alloc]
                                   initWithAdSize:GADAdSizeFromCGSize(CGSizeMake(320, 50))
-                                  origin:CGPointMake((self.view.frame.size.width-320)/2, self.view.frame.size.height-50)];
+                                  origin:CGPointMake((self.view.frame.size.width-320)/2, self.view.frame.size.height-60)];
     
     
     [self.view addSubview:bannerView];
@@ -31,7 +31,11 @@
     bannerView.delegate = self;
     [bannerView loadRequest:[self createRequest]];
     
-    
+    // Test Adapter success.
+//    [GADMobileAds.sharedInstance presentAdInspectorFromViewController:self
+//      completionHandler:^(NSError *error) {
+//        // Error will be non-nil if there was an issue and the inspector was not displayed.
+//    }];
 }
 
 #pragma mark GADRequest generation
@@ -45,13 +49,8 @@
     
     // Make the request for a test ad. Put in an identifier for the simulator as
     // well as any devices you want to receive test ads.
-    
-    
-    request.testDevices = [NSArray arrayWithObjects:@"1ecb9a7ec3266aac8f4fc707fdd9e322",
-     // TODO: Add your device/simulator test identifiers here. They are
-     // printed to the console when the app is launched.
-     kGADSimulatorID,
-     nil];
+
+    GADMobileAds.sharedInstance.requestConfiguration.testDeviceIdentifiers = @[ GADSimulatorID , @"You'r testDevice."];
     
     return request;
 }
